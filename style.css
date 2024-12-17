@@ -73,17 +73,22 @@ body {
     margin: 1.4em 1em 1em 1em;
   }
   .contact{
-    background-image: url(./pic/istockphoto-185230011-1024x1024.jpg);
-    height: 19rem;
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
+    height: 19rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 10rem;
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
+  }
+  .contactImg{
+    background-image: url(./pic/istockphoto-185230011-1024x1024.jpg);
+  }
+  .aboutImg{
+    background-image: url(./pic/aboutImg.jpg);
   }
   .contact .nav li {
     border-radius: 10px;
