@@ -140,3 +140,57 @@ body {
 .mail a{
   color: black;
 }
+
+/* for mobile phone users */
+@media screen and (max-width: 768px) {
+  .topBar {
+    padding: 0 1rem;
+  }
+  #link {
+    justify-content: center;
+  }
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .site-navigation {
+    justify-content: center;
+  }
+  .contact {
+    padding: 1rem;
+  }
+  .blocks{
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact .nav li {
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .topBar {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  #text {
+    font-size: 0.9rem;
+  }
+  .site-header {
+    padding: 0.5rem;
+  }
+  .site-navigation li {
+    margin: 0.3em;
+  }
+  .contact .nav li {
+    padding: 0.25rem 1.25rem;
+  }
+  .blocks div {
+    width: 90%; /* Use almost full width */
+    margin: 0.5rem auto;
+  }
+  .blocks{
+    flex-direction: column;
+  }
+
+}
