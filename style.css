@@ -142,7 +142,7 @@ body {
 }
 
 /* for mobile phone users */
-@media screen and (max-width: 768px) {
+@media(max-width: 768px) {
   .topBar {
     padding: 0 1rem;
   }
@@ -168,7 +168,7 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media(max-width: 480px) {
   .topBar {
     flex-direction: column;
     padding: 0.5rem;
