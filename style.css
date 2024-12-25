@@ -4,6 +4,11 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+.main{
+  padding: 0 4rem;
+  word-spacing: 10px;
+  line-height: 25px;
+}
 .topBar{
   display: flex;
   padding: 0 10rem;
