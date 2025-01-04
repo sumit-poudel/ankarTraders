@@ -1,2 +1,2 @@
-website for a pharma company
-#https://sumitpoude325.github.io/ankarTraders/
+# website for a pharma company
+## https://sumit-poudel.github.io/ankarTraders/
