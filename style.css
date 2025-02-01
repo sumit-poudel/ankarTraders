@@ -4,6 +4,12 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+:root{
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-intense: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
 .main{
   padding: 0 4rem;
   word-spacing: 10px;
@@ -42,11 +48,24 @@ transform: scale(1.2);
 body {
     font-family: Helvetica;
     margin: 0;
+    background-color: #f5f5f5;
   }
+ 
  .nav  a {
     text-decoration: none;
-    color: #000;
+    color: #000000;
+    font-size: 16px;
+    transition: transform 0.3s ease; 
+    display: inline-block; 
   }
+  .nav a:hover {
+    transform: scale(1.1); 
+  }
+  
+  .nav li{
+    min-width: 10px; 
+  }
+ 
   .site-header { 
     border-bottom: 1px solid #ccc;
     display: flex;
@@ -70,8 +89,9 @@ body {
   .nav{
     display: flex;
   }
-  .nav *{
+  .nav li{
     list-style: none;
+    text-align: center;
   }
   .site-navigation li {
     margin: 1.4em 1em 1em 1em;
@@ -100,8 +120,14 @@ body {
     margin: 0 1rem;
     background-color: white;
   }
+  .contact .nav li:hover{
+    transform: scale(1.1)skew(-21deg);
+  }
   .contact .nav li:first-child{
     margin: 0;
+  }
+  .contact .nav *{
+    transition: all .3s ease;
   }
   .contact .nav a{
     color: black;
@@ -112,24 +138,37 @@ body {
     font-weight: bold;
   }
 .contact .nav a:hover,.hover:hover{
-  text-shadow: 1px 1px #575757;
+  transform: scale(1.1)skew(21deg);
 }
-.contact .nav li:active,.hover:active {
-    box-shadow: 5px 5px #575757;
-}
+
 .blocks{
  display: flex;
- margin: 2rem 0;
+ gap: 2rem;
  justify-content: space-evenly;
+ margin: 2rem 2rem;
+}
+
+.blocks div:hover{
+  transform: rotateY(10deg) scale(1.05);
+  box-shadow: var(--shadow-intense);
 }
 .blocks div{
   padding: 1rem 0;
-  box-shadow: 5px 10px 18px #888888;
+  padding: 10px;
+  transition: all 0.4s ease;
+  perspective: 1000px;
   width: 25rem;
+  border-radius: 10px;
+  flex-shrink: 2;
   height: 9rem;
   display: flex;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+#whatsapp{
+  flex-shrink: 1;
 }
 .blocks button{
   background-color: #25D366;
@@ -159,7 +198,7 @@ body {
   position: absolute;
   right: 0;
   width: 100%;
-  background-color: white;
+  background-color: #f5f5f5;
   color: black;
   animation: typing 3s steps(14) alternate infinite,
              blink .75s infinite;
@@ -196,6 +235,7 @@ body {
   .blocks{
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
   .contact .nav li {
     padding: 0.5rem 1.5rem;
@@ -225,6 +265,7 @@ body {
   }
   .blocks{
     flex-direction: column;
+    gap: 20px
   }
 
 }
